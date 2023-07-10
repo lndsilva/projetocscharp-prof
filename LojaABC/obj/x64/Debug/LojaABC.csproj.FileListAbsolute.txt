@@ -1,0 +1,12 @@
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\bin\x64\Debug\LojaABC.exe.config
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\bin\x64\Debug\LojaABC.exe
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\bin\x64\Debug\LojaABC.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.csproj.AssemblyReference.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.Properties.Resources.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.csproj.GenerateResource.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.csproj.CoreCompileInputs.cache
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.exe
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.pdb
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.Form1.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.frmLogin.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.frmMenuPrincipal.resources
