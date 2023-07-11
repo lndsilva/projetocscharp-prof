@@ -70,6 +70,5 @@ namespace LojaABC
                 txtUsuario.Focus();
             }
         }
-
     }
 }

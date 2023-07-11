@@ -10,3 +10,4 @@ C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.Form1.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.frmLogin.resources
 C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.frmMenuPrincipal.resources
+C:\Users\laercio.nsilva\Documents\Visual Studio 2019\EmpresaABC\LojaABC\obj\x64\Debug\LojaABC.frmFuncionarios.resources
