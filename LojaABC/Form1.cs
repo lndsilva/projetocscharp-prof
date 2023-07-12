@@ -16,5 +16,12 @@ namespace LojaABC
         {
             InitializeComponent();
         }
+
+        private void btnTestaData_Click(object sender, EventArgs e)
+        {
+            dtpDataTest.Value = new DateTime(2023, 07, 11);
+
+            MessageBox.Show("Data inserida manualmente: "+dtpDataTest);
+        }
     }
 }
