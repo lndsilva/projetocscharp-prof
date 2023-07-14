@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace LojaABC
 {
@@ -110,5 +111,45 @@ namespace LojaABC
             cbbEstado.Text = endereco.uf;
 
         }
+
+        private void btnTestaBanco_Click(object sender, EventArgs e)
+        {
+            Conexao.obterConexao();
+
+            MessageBox.Show("Aberto");
+
+            Conexao.fecharConexao();
+
+            MessageBox.Show("Fechado");
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        //Cadastrar funcionarios
+        public void cadastrarFuncionarios()
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "insert into tbFuncionarios" +
+                "(nome,cpf,dataNasc,endereco,numero,bairro,cidade,siglaEst,cep)" +
+                "values(@nome,@cpf,@dataNasc,@endereco,@numero,@bairro,@cidade,@siglaEst,@cep);";
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@nome",MySqlDbType.VarChar,100).Value = txtNome.Text;
+            
+            comm.Connection = Conexao.obterConexao();
+
+            comm.ExecuteNonQuery();
+
+            Conexao.fecharConexao();
+
+
+
+
+        }
+
     }
 }

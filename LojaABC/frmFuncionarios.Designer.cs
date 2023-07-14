@@ -39,6 +39,19 @@ namespace LojaABC
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.gpbFuncionarios = new System.Windows.Forms.GroupBox();
+            this.btnCarregaCEP = new System.Windows.Forms.Button();
+            this.cbbEstado = new System.Windows.Forms.ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.lblCidade = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.lblCEP = new System.Windows.Forms.Label();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.lblEndereco = new System.Windows.Forms.Label();
             this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.lblDataNasc = new System.Windows.Forms.Label();
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
@@ -47,19 +60,7 @@ namespace LojaABC
             this.lblNome = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.lblEndereco = new System.Windows.Forms.Label();
-            this.lblCEP = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.txtBairro = new System.Windows.Forms.TextBox();
-            this.lblBairro = new System.Windows.Forms.Label();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.cbbEstado = new System.Windows.Forms.ComboBox();
-            this.btnCarregaCEP = new System.Windows.Forms.Button();
+            this.btnTestaBanco = new System.Windows.Forms.Button();
             this.pnlCRUD.SuspendLayout();
             this.gpbFuncionarios.SuspendLayout();
             this.SuspendLayout();
@@ -147,6 +148,7 @@ namespace LojaABC
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnNovo
             // 
@@ -162,6 +164,7 @@ namespace LojaABC
             // 
             // gpbFuncionarios
             // 
+            this.gpbFuncionarios.Controls.Add(this.btnTestaBanco);
             this.gpbFuncionarios.Controls.Add(this.btnCarregaCEP);
             this.gpbFuncionarios.Controls.Add(this.cbbEstado);
             this.gpbFuncionarios.Controls.Add(this.lblEstado);
@@ -190,6 +193,118 @@ namespace LojaABC
             this.gpbFuncionarios.TabIndex = 0;
             this.gpbFuncionarios.TabStop = false;
             this.gpbFuncionarios.Text = "Dados pessoais";
+            // 
+            // btnCarregaCEP
+            // 
+            this.btnCarregaCEP.Location = new System.Drawing.Point(400, 317);
+            this.btnCarregaCEP.Name = "btnCarregaCEP";
+            this.btnCarregaCEP.Size = new System.Drawing.Size(160, 51);
+            this.btnCarregaCEP.TabIndex = 18;
+            this.btnCarregaCEP.Text = "Carrega CEP";
+            this.btnCarregaCEP.UseVisualStyleBackColor = true;
+            this.btnCarregaCEP.Click += new System.EventHandler(this.btnCarregaCEP_Click);
+            // 
+            // cbbEstado
+            // 
+            this.cbbEstado.FormattingEnabled = true;
+            this.cbbEstado.Location = new System.Drawing.Point(91, 324);
+            this.cbbEstado.Name = "cbbEstado";
+            this.cbbEstado.Size = new System.Drawing.Size(227, 28);
+            this.cbbEstado.TabIndex = 11;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(23, 332);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(60, 20);
+            this.lblEstado.TabIndex = 17;
+            this.lblEstado.Text = "Estado";
+            // 
+            // mskCEP
+            // 
+            this.mskCEP.Location = new System.Drawing.Point(551, 133);
+            this.mskCEP.Mask = "99999-999";
+            this.mskCEP.Name = "mskCEP";
+            this.mskCEP.Size = new System.Drawing.Size(93, 26);
+            this.mskCEP.TabIndex = 5;
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(400, 257);
+            this.txtCidade.MaxLength = 10;
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(324, 26);
+            this.txtCidade.TabIndex = 9;
+            // 
+            // lblCidade
+            // 
+            this.lblCidade.AutoSize = true;
+            this.lblCidade.Location = new System.Drawing.Point(332, 263);
+            this.lblCidade.Name = "lblCidade";
+            this.lblCidade.Size = new System.Drawing.Size(59, 20);
+            this.lblCidade.TabIndex = 16;
+            this.lblCidade.Text = "Cidade";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(91, 257);
+            this.txtBairro.MaxLength = 10;
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(227, 26);
+            this.txtBairro.TabIndex = 8;
+            // 
+            // lblBairro
+            // 
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Location = new System.Drawing.Point(23, 263);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(51, 20);
+            this.lblBairro.TabIndex = 14;
+            this.lblBairro.Text = "Bairro";
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Location = new System.Drawing.Point(596, 193);
+            this.txtNumero.MaxLength = 10;
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(128, 26);
+            this.txtNumero.TabIndex = 7;
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Location = new System.Drawing.Point(522, 196);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(65, 20);
+            this.lblNumero.TabIndex = 12;
+            this.lblNumero.Text = "Número";
+            // 
+            // lblCEP
+            // 
+            this.lblCEP.AutoSize = true;
+            this.lblCEP.Location = new System.Drawing.Point(491, 139);
+            this.lblCEP.Name = "lblCEP";
+            this.lblCEP.Size = new System.Drawing.Size(41, 20);
+            this.lblCEP.TabIndex = 10;
+            this.lblCEP.Text = "CEP";
+            // 
+            // txtEndereco
+            // 
+            this.txtEndereco.Location = new System.Drawing.Point(107, 193);
+            this.txtEndereco.MaxLength = 10;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(409, 26);
+            this.txtEndereco.TabIndex = 6;
+            // 
+            // lblEndereco
+            // 
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Location = new System.Drawing.Point(23, 196);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(78, 20);
+            this.lblEndereco.TabIndex = 8;
+            this.lblEndereco.Text = "Endereço";
             // 
             // dtpNascimento
             // 
@@ -260,117 +375,15 @@ namespace LojaABC
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
-            // txtEndereco
+            // btnTestaBanco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(107, 193);
-            this.txtEndereco.MaxLength = 10;
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(409, 26);
-            this.txtEndereco.TabIndex = 6;
-            // 
-            // lblEndereco
-            // 
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Location = new System.Drawing.Point(23, 196);
-            this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(78, 20);
-            this.lblEndereco.TabIndex = 8;
-            this.lblEndereco.Text = "Endereço";
-            // 
-            // lblCEP
-            // 
-            this.lblCEP.AutoSize = true;
-            this.lblCEP.Location = new System.Drawing.Point(491, 139);
-            this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(41, 20);
-            this.lblCEP.TabIndex = 10;
-            this.lblCEP.Text = "CEP";
-            // 
-            // txtNumero
-            // 
-            this.txtNumero.Location = new System.Drawing.Point(596, 193);
-            this.txtNumero.MaxLength = 10;
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(128, 26);
-            this.txtNumero.TabIndex = 7;
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(522, 196);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(65, 20);
-            this.lblNumero.TabIndex = 12;
-            this.lblNumero.Text = "Número";
-            // 
-            // txtBairro
-            // 
-            this.txtBairro.Location = new System.Drawing.Point(91, 257);
-            this.txtBairro.MaxLength = 10;
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(227, 26);
-            this.txtBairro.TabIndex = 8;
-            // 
-            // lblBairro
-            // 
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(23, 263);
-            this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(51, 20);
-            this.lblBairro.TabIndex = 14;
-            this.lblBairro.Text = "Bairro";
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(400, 257);
-            this.txtCidade.MaxLength = 10;
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(324, 26);
-            this.txtCidade.TabIndex = 9;
-            // 
-            // lblCidade
-            // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(332, 263);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(59, 20);
-            this.lblCidade.TabIndex = 16;
-            this.lblCidade.Text = "Cidade";
-            // 
-            // mskCEP
-            // 
-            this.mskCEP.Location = new System.Drawing.Point(551, 133);
-            this.mskCEP.Mask = "99999-999";
-            this.mskCEP.Name = "mskCEP";
-            this.mskCEP.Size = new System.Drawing.Size(93, 26);
-            this.mskCEP.TabIndex = 5;
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(23, 332);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(60, 20);
-            this.lblEstado.TabIndex = 17;
-            this.lblEstado.Text = "Estado";
-            // 
-            // cbbEstado
-            // 
-            this.cbbEstado.FormattingEnabled = true;
-            this.cbbEstado.Location = new System.Drawing.Point(91, 324);
-            this.cbbEstado.Name = "cbbEstado";
-            this.cbbEstado.Size = new System.Drawing.Size(227, 28);
-            this.cbbEstado.TabIndex = 11;
-            // 
-            // btnCarregaCEP
-            // 
-            this.btnCarregaCEP.Location = new System.Drawing.Point(400, 317);
-            this.btnCarregaCEP.Name = "btnCarregaCEP";
-            this.btnCarregaCEP.Size = new System.Drawing.Size(160, 51);
-            this.btnCarregaCEP.TabIndex = 18;
-            this.btnCarregaCEP.Text = "Carrega CEP";
-            this.btnCarregaCEP.UseVisualStyleBackColor = true;
-            this.btnCarregaCEP.Click += new System.EventHandler(this.btnCarregaCEP_Click);
+            this.btnTestaBanco.Location = new System.Drawing.Point(399, 374);
+            this.btnTestaBanco.Name = "btnTestaBanco";
+            this.btnTestaBanco.Size = new System.Drawing.Size(254, 35);
+            this.btnTestaBanco.TabIndex = 19;
+            this.btnTestaBanco.Text = "Testar banco";
+            this.btnTestaBanco.UseVisualStyleBackColor = true;
+            this.btnTestaBanco.Click += new System.EventHandler(this.btnTestaBanco_Click);
             // 
             // frmFuncionarios
             // 
@@ -424,5 +437,6 @@ namespace LojaABC
         private System.Windows.Forms.ComboBox cbbEstado;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Button btnCarregaCEP;
+        private System.Windows.Forms.Button btnTestaBanco;
     }
 }
